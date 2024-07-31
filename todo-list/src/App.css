@@ -1,0 +1,154 @@
+/* src/App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e0f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+.App {
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"], textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 90%;
+}
+
+textarea {
+  height: 80px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-5px);
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.task-item span {
+  flex-grow: 1;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.task-item input[type="text"], .task-item textarea {
+  width: 60%;
+}
+
+.task-item button {
+  background-color: #007bff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.task-item button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background-color: #dc3545;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-details {
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .task-item {
+    flex-direction: column;
+  }
+
+  .task-item span,
+  .task-item input[type="text"],
+  .task-item textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
