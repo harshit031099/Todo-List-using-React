@@ -33,3 +33,9 @@ This project is a ToDo List application built using React, designed to help user
    ```bash
    git https://github.com/harshit031099/Todo-List-using-react.git
    cd Todo-List-using-react
+2. **Install Dependencies:**
+bash
+npm install
+3. **Run the Application:**
+bash
+npm start   
